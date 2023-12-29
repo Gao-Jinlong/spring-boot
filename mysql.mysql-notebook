@@ -1,0 +1,363 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "DB Notebook",
+    "content": "\\about\ncreate database if not exists mybatis;\n\nuse mybatis;\n\ncreate table user(\n  id int unsigned primary key auto_increment comment 'ID',\n  name varchar(100) comment '姓名',\n  age tinyint unsigned comment '年龄',\n  gender tinyint unsigned comment '性别 1：男 2：女',\n  phone varchar(11) comment '手机号'\n) comment '用户表';\n\ninsert into user (id, name, age, gender, phone) values (null, '张三', 18, 1, '18888888881');\ninsert into user (id, name, age, gender, phone) values (null, '张四', 18, 1, '18888888882');\ninsert into user (id, name, age, gender, phone) values (null, '张五', 18, 1, '18888888883');\ninsert into user (id, name, age, gender, phone) values (null, '张六', 18, 1, '18888888884');\ninsert into user (id, name, age, gender, phone) values (null, '张七', 18, 1, '18888888885');\ninsert into user (id, name, age, gender, phone) values (null, '张八', 18, 1, '18888888886');\nSELECT * from user;\n",
+    "options": {
+        "tabSize": 4,
+        "indentSize": 4,
+        "insertSpaces": true,
+        "defaultEOL": "LF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": {
+        "cursorState": [
+            {
+                "inSelectionMode": false,
+                "selectionStart": {
+                    "lineNumber": 20,
+                    "column": 20
+                },
+                "position": {
+                    "lineNumber": 20,
+                    "column": 20
+                }
+            }
+        ],
+        "viewState": {
+            "scrollLeft": 0,
+            "firstPosition": {
+                "lineNumber": 2,
+                "column": 1
+            },
+            "firstPositionDeltaTop": 15
+        },
+        "contributionsState": {
+            "editor.contrib.folding": {},
+            "editor.contrib.wordHighlighter": false
+        }
+    },
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 1,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "content": "Welcome to the MySQL Shell - DB Notebook.\n\nPress Ctrl+Enter to execute the code block.\n\nExecute \\sql to switch to SQL, \\js to JavaScript and \\ts to TypeScript mode.\nExecute \\help or \\? for help;",
+                            "language": "ansi"
+                        }
+                    ]
+                },
+                "currentHeight": 122,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 6
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 2,
+                "end": 19,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 4,
+                            "index": 0,
+                            "resultId": "f9d1a272-cf78-47cc-cb5e-912ee471683e",
+                            "content": "OK, 1 row affected in 6.222ms"
+                        },
+                        {
+                            "type": 4,
+                            "index": 1,
+                            "resultId": "dbefae31-bbd6-4c40-9c4e-264a310aab7e",
+                            "content": "OK, 0 records retrieved in 1ms"
+                        },
+                        {
+                            "type": 4,
+                            "index": 2,
+                            "resultId": "6cc63f55-8dad-4a9f-e670-33574f167aa1",
+                            "content": "OK, 0 records retrieved in 24.542ms"
+                        },
+                        {
+                            "type": 4,
+                            "index": 3,
+                            "resultId": "4fc9db2d-88b4-4cfd-b553-8faaa2bba1b8",
+                            "content": "OK, 1 row affected in 10.099ms"
+                        },
+                        {
+                            "type": 4,
+                            "index": 4,
+                            "resultId": "441640fc-40b8-49ad-e8be-78843aeb181f",
+                            "content": "OK, 1 row affected in 5.579ms"
+                        },
+                        {
+                            "type": 4,
+                            "index": 5,
+                            "resultId": "f622516b-2095-4f18-8502-ee2b313a1222",
+                            "content": "OK, 1 row affected in 6.09ms"
+                        },
+                        {
+                            "type": 4,
+                            "index": 6,
+                            "resultId": "c4f2dc72-2fa7-4ae7-a533-575194def5d7",
+                            "content": "OK, 1 row affected in 5.431ms"
+                        },
+                        {
+                            "type": 4,
+                            "index": 7,
+                            "resultId": "d8f80112-6b5c-4342-e522-65080720b948",
+                            "content": "OK, 1 row affected in 6.189ms"
+                        },
+                        {
+                            "type": 4,
+                            "index": 8,
+                            "resultId": "84276018-10cf-41c6-d788-b8852f74ba47",
+                            "content": "OK, 1 row affected in 6.076ms"
+                        }
+                    ]
+                },
+                "currentHeight": 179,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 38
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 38,
+                            "length": 14
+                        },
+                        "contentStart": 40,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 52,
+                            "length": 249
+                        },
+                        "contentStart": 54,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 301,
+                            "length": 92
+                        },
+                        "contentStart": 303,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 393,
+                            "length": 91
+                        },
+                        "contentStart": 394,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 484,
+                            "length": 91
+                        },
+                        "contentStart": 485,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 575,
+                            "length": 91
+                        },
+                        "contentStart": 576,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 666,
+                            "length": 91
+                        },
+                        "contentStart": 667,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 757,
+                            "length": 91
+                        },
+                        "contentStart": 758,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 20,
+                "end": 20,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "2b66a13a-8453-44d8-bd72-54b163451859"
+                    ]
+                },
+                "currentHeight": 211.5625,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 19
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "78e05354-320e-42ee-e0b4-91a90f1319cf",
+                    "resultId": "2b66a13a-8453-44d8-bd72-54b163451859",
+                    "rows": [
+                        {
+                            "0": 1,
+                            "1": "张三",
+                            "2": 18,
+                            "3": 1,
+                            "4": "18888888881"
+                        },
+                        {
+                            "0": 2,
+                            "1": "张四",
+                            "2": 18,
+                            "3": 1,
+                            "4": "18888888882"
+                        },
+                        {
+                            "0": 3,
+                            "1": "张五",
+                            "2": 18,
+                            "3": 1,
+                            "4": "18888888883"
+                        },
+                        {
+                            "0": 4,
+                            "1": "张六",
+                            "2": 18,
+                            "3": 1,
+                            "4": "18888888884"
+                        },
+                        {
+                            "0": 5,
+                            "1": "张七",
+                            "2": 18,
+                            "3": 1,
+                            "4": "18888888885"
+                        },
+                        {
+                            "0": 6,
+                            "1": "张八",
+                            "2": 18,
+                            "3": 1,
+                            "4": "18888888886"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4
+                            }
+                        },
+                        {
+                            "title": "name",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17
+                            }
+                        },
+                        {
+                            "title": "age",
+                            "field": "2",
+                            "dataType": {
+                                "type": 1
+                            }
+                        },
+                        {
+                            "title": "gender",
+                            "field": "3",
+                            "dataType": {
+                                "type": 1
+                            }
+                        },
+                        {
+                            "title": "phone",
+                            "field": "4",
+                            "dataType": {
+                                "type": 17
+                            }
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 6 records retrieved in 3.17ms"
+                    },
+                    "totalRowCount": 6,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * from user"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 21,
+                "end": 21,
+                "language": "mysql",
+                "currentHeight": 180,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 0
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        }
+    ]
+}
