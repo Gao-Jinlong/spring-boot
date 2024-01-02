@@ -17,4 +17,8 @@ public class UserServiceImpl implements UserService {
   public User findById(Integer id) {
     return userMapper.findById(id);
   }
+
+  public String toIoC() {
+    return "注入 UserServiceImpl 到 IoC 容器";
+  }
 }
