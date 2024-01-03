@@ -3,6 +3,7 @@
 /Users/gaojinlong/ThisMac/coding/java/springboot-manual/src/main/java/com/config/CommonConfig.java
 /Users/gaojinlong/ThisMac/coding/java/springboot-manual/src/main/java/com/example/controller/HelloController.java
 /Users/gaojinlong/ThisMac/coding/java/springboot-manual/src/main/java/com/example/service/impl/UserServiceImpl.java
+/Users/gaojinlong/ThisMac/coding/java/springboot-manual/src/main/java/com/example/annotation/EnableCommonConfig.java
 /Users/gaojinlong/ThisMac/coding/java/springboot-manual/src/main/java/com/config/CommonImportSelector.java
 /Users/gaojinlong/ThisMac/coding/java/springboot-manual/src/main/java/com/example/mapper/UserMapper.java
 /Users/gaojinlong/ThisMac/coding/java/springboot-manual/src/main/java/com/example/SpringBootManualApplication.java
