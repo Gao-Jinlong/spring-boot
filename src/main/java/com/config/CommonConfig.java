@@ -1,4 +1,4 @@
-package com.example.config;
+package com.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,6 +16,6 @@ public class CommonConfig {
   // 注入对象默认名字是方法名
   @Bean(name = "IoCString")
   public String injectString() {
-    return new String("注入 String 到 IoC 容器");
+    return new String("CommonConfig 注入 String 到 IoC 容器");
   }
 }
