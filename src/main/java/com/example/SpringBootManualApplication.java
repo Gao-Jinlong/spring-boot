@@ -8,6 +8,8 @@ import org.springframework.context.annotation.Import;
 
 import com.config.CommonConfig;
 import com.config.CommonImportSelector;
+import com.config.Country;
+import com.config.Province;
 import com.example.annotation.EnableCommonConfig;
 import com.example.service.impl.UserServiceImpl;
 
@@ -25,6 +27,12 @@ public class SpringBootManualApplication {
 
         String str = context.getBean("IoCString", String.class);
         System.out.println(str);
+
+        // Country country = context.getBean(Country.class);
+        // System.out.println(country.getName() + " " + country.getSystem());
+
+        Province province = context.getBean(Province.class);
+        System.out.println(province.getName());
     }
 
 }
