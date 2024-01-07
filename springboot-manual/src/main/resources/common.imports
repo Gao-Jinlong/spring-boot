@@ -1,1 +1,5 @@
 com.config.CommonConfig
+com.example.mapper.UserMapper
+com.example.pojo.User
+com.example.controller.UserController
+com.example.controller.HelloController

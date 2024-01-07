@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.example.service.impl.UserServiceImpl;
+// import com.example.service.impl.UserServiceImpl;
 
 @Configuration
 public class CommonConfig {
