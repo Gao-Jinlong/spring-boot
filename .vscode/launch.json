@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "com.quick_start.App",
+      "projectName": "quick_start"
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-SpringBootManualApplication<springboot-manual>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
