@@ -2,10 +2,17 @@
   "configurations": [
     {
       "type": "java",
+      "name": "QuickStartApplication",
+      "request": "launch",
+      "mainClass": "site.ginlon.QuickStart.QuickStartApplication",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "App",
       "request": "launch",
-      "mainClass": "com.quick_start.App",
-      "projectName": "quick_start"
+      "mainClass": "site.ginlon.QuickStart.QuickStartApplication",
+      "projectName": "quick-start"
     },
     {
       "type": "java",
