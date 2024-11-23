@@ -6,7 +6,6 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
 public class UserDto {
-  private Integer userId;
 
   @NotBlank(message = "用户名不能为空")
   private String username;
@@ -18,10 +17,6 @@ public class UserDto {
   @NotBlank(message = "邮箱不能为空")
   @Email(message = "邮箱格式不正确")
   private String email;
-
-  public Integer getUserId() {
-    return userId;
-  }
 
   public String getUsername() {
     return username;
@@ -37,11 +32,7 @@ public class UserDto {
 
   @Override
   public String toString() {
-    return "UserDto [userId=" + userId + ", username=" + username + ", password=" + password + ", email=" + email + "]";
-  }
-
-  public void setUserId(Integer userId) {
-    this.userId = userId;
+    return "UserDto [userId=" + username + ", password=" + password + ", email=" + email + "]";
   }
 
   public void setUsername(String username) {
