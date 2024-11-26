@@ -1,0 +1,19 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: quick-start
+  datasource:
+    url: jdbc:mysql://localhost:3306/quick_start
+    username: root
+    password: ginlon
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  main:
+    lazy-initialization: true
